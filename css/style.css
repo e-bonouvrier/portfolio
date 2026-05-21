@@ -259,6 +259,62 @@
       line-height: 1.7;
     }
 
+    #about {
+      position: relative;
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 3rem;
+      align-items: center;
+    }
+
+    .about-card {
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 30px;
+      padding: 2rem;
+      backdrop-filter: blur(10px);
+    }
+
+    .about-card h3 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .about-card p {
+      color: #d0d0d0;
+      line-height: 1.9;
+      margin-bottom: 1rem;
+    }
+
+    .mini-mascots {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+    }
+
+    .mascot-box {
+      background: rgba(255,255,255,0.05);
+      border-radius: 20px;
+      padding: 1.5rem;
+      text-align: center;
+      border: 1px solid rgba(255,255,255,0.08);
+      transition: 0.3s ease;
+    }
+
+    .mascot-box:hover {
+      transform: translateY(-6px) rotate(1deg);
+      border-color: rgba(122,252,255,0.4);
+    }
+
+    .mascot-box span {
+      font-size: 2rem;
+      display: block;
+      margin-bottom: 0.8rem;
+    }
+
     .gallery {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
